@@ -32,7 +32,7 @@ namespace QuickSort
             // Recursive calls
             if (left < j)
             {
-                if (Math.Abs(j - left) > 10000) { 
+                if ((j - left) > 10000) { 
                  kurt=Task.Run(() => SerialQuicksort(elements, left, j));
                 }
                 else
@@ -43,7 +43,7 @@ namespace QuickSort
 
             if (i < right)
             {
-                if (Math.Abs(right - i) > 10000)
+                if ((right - i) > 10000)
                 {
                     ib = Task.Run(() => SerialQuicksort(elements, i, right));
                 }
