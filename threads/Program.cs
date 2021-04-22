@@ -12,12 +12,12 @@ namespace threads
 
 
 
-            //var w1 = new HelloWriter("kurt");
-            //var w2 = new HelloWriter("Flemming");
-            //Task.Run(() => w1.SayHello(1000,200));
-            //var k= Task.Run(() => w2.SayHello(1000,500));
-            //Console.WriteLine("Hello");
-            //Task.WaitAll(k);
+            var w1 = new HelloWriter("kurt");
+            var w2 = new HelloWriter("Flemming");
+            Task.Run(() => w1.SayHello(1000, 200));
+            var k = Task.Run(() => w2.SayHello(1000, 500));
+            Console.WriteLine("Hello");
+            Task.WaitAll(k);
 
         }
     }

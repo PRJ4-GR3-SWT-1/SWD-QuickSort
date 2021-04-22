@@ -9,8 +9,10 @@ namespace loops
         {
             Stopwatch stopwatch = new Stopwatch(); 
             const long N = 40000000; 
-            double[] A, B, C; A = new double[N]; 
-            B = new double[N]; C = new double[N]; 
+            double[] A, B, C; 
+            A = new double[N]; 
+            B = new double[N]; 
+            C = new double[N]; 
             Random rand = new Random();
             for (int i = 0; i < N; i++)
             {
