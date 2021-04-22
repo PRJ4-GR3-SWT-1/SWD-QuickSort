@@ -19,16 +19,28 @@ namespace QuickSort
                 Console.WriteLine("QuickSort By Recursive Method - run # {0}", i);
                 stopwatch.Reset();
                 stopwatch.Start();
-                QuickSortSingleThread.SerialQuicksort(numbers, 0, numberOfElements - 1);
+                QuickSortMultiThread.SerialQuicksort(numbers, 0, numberOfElements - 1);
                 stopwatch.Stop();
 
                 var singleThreadRuntime = stopwatch.ElapsedMilliseconds;
 
                 System.Console.WriteLine("Single thread calculation runtime: {0} ms", singleThreadRuntime);
+                Console.WriteLine(IsSorted(numbers));
             }
         }
-        // Da der blev brugt await, blev sorteringen langsommere
-        // Der bruges derfor task.run, som gik hurtigt, men det blev ikke sorteret korrekt.
-                // indtil der blev sat wait på tasks, og der ikke blev lavet tasks for arrays under 10000 pladser.
+        public static bool IsSorted(long[] arr)
+        {
+            for (int i = 1; i < arr.Length; i++)
+            {
+                if (arr[i - 1] > arr[i])
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
+    // Da der blev brugt await, blev sorteringen langsommere
+    // Der bruges derfor task.run, som gik hurtigt, men det blev ikke sorteret korrekt.
+    // indtil der blev sat wait på tasks, og der ikke blev lavet tasks for arrays under 10000 pladser.
 }
