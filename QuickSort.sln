@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickSort", "QuickSort\Quic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "threads", "threads\threads.csproj", "{BB69BBF8-5048-44FD-A8EB-6A6524EBCC93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "loops", "loops\loops.csproj", "{842A6F67-0154-4A6F-A573-3B5E73E2D99A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BB69BBF8-5048-44FD-A8EB-6A6524EBCC93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB69BBF8-5048-44FD-A8EB-6A6524EBCC93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB69BBF8-5048-44FD-A8EB-6A6524EBCC93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{842A6F67-0154-4A6F-A573-3B5E73E2D99A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{842A6F67-0154-4A6F-A573-3B5E73E2D99A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{842A6F67-0154-4A6F-A573-3B5E73E2D99A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{842A6F67-0154-4A6F-A573-3B5E73E2D99A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
