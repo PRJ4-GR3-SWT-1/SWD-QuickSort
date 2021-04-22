@@ -27,5 +27,8 @@ namespace QuickSort
                 System.Console.WriteLine("Single thread calculation runtime: {0} ms", singleThreadRuntime);
             }
         }
+        // Da der blev brugt await, blev sorteringen langsommere
+        // Der bruges derfor task.run, som gik hurtigt, men det blev ikke sorteret korrekt.
+                // indtil der blev sat wait på tasks, og der ikke blev lavet tasks for arrays under 10000 pladser.
     }
 }
